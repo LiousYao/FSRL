@@ -224,7 +224,7 @@ def cost_limit_scheduler(epoch, epoch_start, epoch_end, cost_start, cost_end):
 def train(args: TrainCfg):
     # set seed and computing
     seed_all(args.seed)
-    torch.set_num_threads(thread)
+    torch.set_num_threads(args.thread)
 
     task = args.task
     default_cfg = TASK_TO_CFG[task]() if task in TASK_TO_CFG else TrainCfg()
