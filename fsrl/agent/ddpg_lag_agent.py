@@ -12,6 +12,7 @@ from fsrl.policy import DDPGLagrangian
 from fsrl.utils import BaseLogger
 from fsrl.utils.exp_util import auto_name, seed_all
 from fsrl.utils.net.common import ActorCritic
+import numpy as np
 
 
 class DDPGLagAgent(OffpolicyAgent):
