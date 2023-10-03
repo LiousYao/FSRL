@@ -13,6 +13,7 @@ from fsrl.utils import BaseLogger
 from fsrl.utils.exp_util import seed_all
 from fsrl.utils.net.common import ActorCritic
 from fsrl.utils.net.continuous import DoubleCritic, SingleCritic
+import numpy as np
 
 
 class CVPOAgent(OffpolicyAgent):
